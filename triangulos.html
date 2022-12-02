@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>triangulos</title>
+</head>
+<body>
+    <script>
+
+     //Ejercicio de que triangulo se trata
+let ladoA, ladoB, ladoC;
+
+ladoA = parseFloat(prompt("Favor de ingresar lado 1:"));
+ladoB = parseFloat(prompt("Favor de ingresar lado 2:"));
+ladoC = parseFloat(prompt("Favor de ingresar lado 3:"));
+
+let mayor,menor,aux;
+
+if(ladoA>ladoB){
+    mayor=ladoA;
+    menor=ladoB;
+}else {
+    mayor=ladoB
+    menor=ladoA;
+}
+if(ladoC>mayor){
+    aux=mayor;
+    mayor=ladoC;
+    
+}else aux=ladoC;
+
+let sumaMenores= aux+menor;
+if( sumaMenores <mayor){
+    
+    console.log("No es un triangulo valido");
+
+}else{
+
+
+
+
+if(ladoA == ladoB && ladoB == ladoC)
+
+console.log("Los lados corresponden a un lado equilatero");
+
+else if(ladoA == ladoB || ladoA == ladoC || ladoB == ladoC)
+
+console.log("los lados corresponden a un triangulo isoceles");
+
+else
+
+console.log("Los lados eqivalentes a un triangulo escaleno");   
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, inicial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            var  tiempo , suma_tiempo = 0,horas, segundos;
+            while(tiempo != 0){
+                tiempo = parseInt(prompt("Duracion tramo:"));
+              //  console.log("Recorrido", recorrido, ".", tiempo);
+
+                suma_tiempo +=  tiempo;
+                
+            }
+            
+            horas = Math.floor(suma_tiempo/60);
+            segundos = ((suma_tiempo/60)-horas) *60;
+            segundos = segundos.toFixed();
+            if(segundos<10) segundos="0"+segundos;
+            
+            console.log("Horas de recorrido:", horas.toFixed()+":"+segundos);
+            </script>
+    </body>
+    </html>
+    

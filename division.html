@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>division</title>
+</head>
+<body>
+    <script>
+
+let num, divisor, cociente, resto;
+
+num =  parseFloat(prompt("Ingresa el numero a dividir"));
+divisor = parseFloat( prompt("Ingresa el divisor"));
+
+if(num%divisor ==0){
+    console.log("Es exacata");
+}else console.log("No es exacata");
+
+cociente =(Math.floor( num/divisor));
+
+resto = num % divisor;
+
+console.log("El divisor es " +cociente);
+console.log("El resto es " + resto);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PI</title>
+</head>
+<body>
+<script>
+
+//calcular el pi
+let contador=1;
+let alternada = 1;
+let limite =parseInt( prompt("Ingresa el numero de terminos de la suma"));
+let PI = 0;
+
+for(let index = 0; index < limite; index ++){
+    PI += alternada * (1/contador);
+    contador+=2;
+    alternada *= (-1);
+}
+PI *= 4;
+console.log(PI);
+
+    </script>
+</body>
+</html>
